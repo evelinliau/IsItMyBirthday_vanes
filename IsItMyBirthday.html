@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Is My Birthday??</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+</body>
+<script>
+    let yes = "YES!"
+    let no = "NO"
+    var h1 = document.querySelector("h1")
+
+
+    
+    
+    let date = new Date();
+    console.log(date.getDay(), date.getMonth());
+    console.log(date.getDate() === 16 && date.getMonth() == 4);
+    
+    if (date.getDate() === 1 && date.getMonth() == 0)
+        
+        h1.innerHTML = yes
+        // h1.style.color = "black"
+        // document.querySelector("body").style.backgroundColor = "plum"   
+        
+    else
+        
+        h1.innerHTML = no
+        h1.style.color = "navy"
+        document.querySelector("body").style.backgroundImage = "repeating-linear-gradient(purple, pink, blue, pink, purple)";
+        
+        
+    
+    
+
+</script>
+</html>
